@@ -1,18 +1,20 @@
 # Library Management System
-Project Overview: This project involves building a simple library management system in C++. This system would allow the librarian to manage books and keep track of issued books. The librarian should be able to add new books, search for books, issue a book, and return a book.
 
-The project will provide students an opportunity to apply knowledge of various data structures such as arrays, linked lists, trees, and more in a practical scenario. It will also involve implementing essential algorithms for searching and sorting.
+Project Overview:
+This project implements a basic Library Management System in Java. It enables a librarian to efficiently manage book inventory and track book issuance. The system supports adding, searching, issuing, returning, and deleting books, offering a practical application of data structures like linked lists.
 
 Features:
+Add New Books: Librarians can add books to the system, each identified by a unique ID, with details such as title, author, and availability status (available or issued). The system uses a linked list to manage book data.
 
-Add New Books: The librarian should be able to add new books to the system. Each book has a unique ID, title, author, and status (available or issued). Use an array or linked list to store book data.
+Search for a Book: Books can be searched by either their ID or title. When a book is found, its details, including availability status and issued information, are displayed. The system uses a linear search to locate books.
 
-Search for a Book: The librarian should be able to search for a book by its title or ID. If the book is found, display its details. Implement a search algorithm (like binary search if the list of books is sorted, or a simple linear search) to find a book.
+Issue a Book: Books can be issued to students, with the system updating their status to "Issued" and recording the student's name. The system prevents a book from being issued more than once.
 
-Issue a Book: When a book is issued, change its status from available to issued and store the details of the student to whom the book has been issued. Consider using a stack or queue structure to manage book issues.
+Return a Book: Returned books are marked as "Available" again, and the student's information is cleared from the record.
 
-Return a Book: When a book is returned, change its status from issued to available and remove the details of the student to whom the book had been issued.
+List All Books: Librarians can view all the books in the system, with details like ID, title, author, and current status (available or issued). The system displays the books as they were added.
 
-List All Books: The librarian should be able to view a list of all books in the library. Implement a sorting algorithm (like quick sort or merge sort) to display the books in a sorted manner (by ID or title).
+Delete a Book: Books can be deleted from the system using either their ID or title. The system removes the book node from the linked list.
 
-Delete a Book: The librarian should be able to delete a book from the system. If you're using a linked list to store books, this will involve removing a node from the list.
+Input Validation: The system ensures that all user inputs, especially integers like book IDs and menu options, are correctly entered to avoid errors.
+
